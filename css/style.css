@@ -199,6 +199,7 @@ body{
 .nav-link-custom{
     color: white;
     padding: 0;
+    transition: ease-in-out .5s;
 }
 .nav-link-custom:hover{
     color: #fcdb00;
