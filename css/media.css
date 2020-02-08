@@ -73,6 +73,9 @@
     margin-top: 5px;
     padding: 10px 0;
 }
+.social {
+    margin-top: 30px;
+}
 .social ul li {
     width: 40px;
     height: 40px;
@@ -160,6 +163,9 @@
     padding-top: 60px;
     padding-bottom: 80px;
 }
+.social {
+    margin-top: 30px;
+}
 /*contact end*/    
  /* footer start   */
  .footer{
@@ -198,6 +204,9 @@
 .features {
     padding-top: 80px;
     padding-bottom: 100px;
+}
+.social {
+    margin-top: 40px;
 }
 .m_t_60 {
     margin-top: 40px;
