@@ -1,206 +1,250 @@
-/*font-family: 'PT Sans', sans-serif;*/
-*{
+/*font links*/
+@font-face {
+    font-family: PTSans-Regular;
+    src: url(../fonts/PTSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: PTSans-Bold;
+    src: url(../fonts/PTSans-Bold.ttf);
+}
+
+* {
     padding: 0;
     margin: 0;
-    
 }
-body{
-    font-family: 'PT Sans', sans-serif;
-    color: #010101;
+
+body {
+    font-family: PTSans-Regular;
 }
+
 /*header start*/
-.header{
+.header {
     background-color: #fcdb00;
-        padding: 25px 0;
+    padding: 40px 0;
 }
-.menu{}
-.menu ul li a{
-    font-weight: 700;
+
+.menu {}
+
+.menu ul li {
+    padding: 0 30px;
+}
+
+.menu ul li:last-child {
+    padding-right: 0;
+}
+
+.menu ul li a {
+    font-family: PTSans-Bold;
     font-size: 22px;
     color: #010101;
-    padding: 0 40px !important;
-    transition: .5s !important;
+    transition: ease 1s;
 }
-.menu ul li:last-child a{
-    padding-right: 0 !important;
-}
-.menu ul li a:hover{
+
+.menu ul li a:hover {
     color: white !important;
 }
-    
+
 /*header end*/
-/*slider start*/
-.slider{ 
+/*banner start*/
+.banner {
     background-color: #fcdb00;
     padding-bottom: 100px;
 }
+
 .carousel-indicators-custom {
-    bottom: -90px;
+    bottom: -85px;
 }
+
 .carousel-indicators-custom li {
-    border-radius: 50%;
     width: 15px;
     height: 15px;
-   
-    
+    border-radius: 50%;
 }
-.slider-content{
-       margin-top: 65px; 
-}
-.slider-content h1{
-    font-weight: 700;
+
+.slider-content {}
+
+.slider-content h1 {
+    font-family: PTSans-Bold;
     font-size: 32px;
+    color: #010101;
 }
-.slider-content h2{
-    font-weight: 400;
-    font-size: 20px;
-    color: #313841;
+
+.slider-content h2 {
+    font-family: PTSans-Regular;
+    font-size: 22px;
+    color: #010101;
+    margin: 25px 0;
+    word-spacing: 1px;
     letter-spacing: 1px;
-    word-spacing: 2px;
-    margin: 20px 0;
 }
-.slider-content p{
+
+.slider-content p {
+    font-family: PTSans-Regular;
     color: #555555;
-    line-height: 20px;
-    letter-spacing: 1px;
-    margin-bottom: 35px;
+    word-spacing: 1px;
 }
-.slider-icon{
-    font-size: 40px;
-    
+
+.slider-icon {}
+
+.slider-icon li {
+    font-size: 42px;
+    padding: 0 20px;
 }
-.slider-icon li{
-    margin-right: 30px !important;
+
+.slider-icon li:first-child {
+    padding-left: 0;
 }
-/*slider end*/
-/*features start*/
-.features{
+
+/*banner end*/
+/*feature start*/
+.feature {
     padding-top: 80px;
     padding-bottom: 100px;
 }
-.features_title{}
-.features_title_h1{
-    font-weight: 700;
+
+.feature_title_content {}
+
+.c_title {
+    font-family: PTSans-Bold;
     font-size: 32px;
     color: #010101;
-    
 }
-.features_title_p{
+
+.c_subtitle {
+    font-family: PTSans-Regular;
     font-size: 20px;
     color: #313841;
+    line-height: 25px;
     word-spacing: 1px;
     letter-spacing: 1px;
-    line-height: 25px;
 }
-/*features second row start*/
 
-/*features second row end*/
-.m_t_60{
-    margin-top: 60px;
+.mt-60 {
+    margin-top: 80px;
 }
-.f_icon{
+
+.f_icon i {
+    align-self: center;
     font-size: 50px;
-    color: #010101;
-    transition: ease-in-out .5s;
+    padding: 15px;
+    padding: 10px;
+    transition: ease .3s;
 }
-.f_icon:hover{
-    transform: rotatey(180deg);
+
+.f_icon i:hover {
+    transform: scale(1.3, 1.3);
 }
-.f_text{
-      margin-top: 6px;
-  
-}
-.f_text h2{
-    font-weight: 400;
+
+.f_content {}
+
+.f_content h2 {
+    font-family: PTSans-Regular;
     font-size: 22px;
     color: #010101;
-}
-.f_text p{
-    color: #898989;
-    line-height: 22px;
-    word-spacing: 4px;
+
 }
 
-/*features end*/
+.f_content p {
+    font-family: PTSans-Regular;
+    color: #898989;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+
+.contact_title {
+    color: #fcdb00;
+}
+
+.contact_subtitle {
+    color: #898989;
+}
+
+/*feature end*/
 /*contact start*/
-.contact{
+.contact {
     padding-top: 80px;
     padding-bottom: 100px;
     background-color: #010101;
 }
-.contact_title_h1{
-    color: #fcdb00;
+
+.contact_form {
+    margin-top: 40px;
 }
-.contact_title_p{
+
+.contact_form_name {
+    height: 50px;
+}
+
+.contact_form_name::placeholder {
     color: #898989;
 }
-.contact_form{
-    padding: 20px 0;
-}
-.contact_form input{
-    color: #010101;
-    padding: 24px 20px;
-}
-.contact_form input::placeholder{
-    color: #898989;
-}
-.contact_form button {
-    font-weight: 700;
-    color:#010101;
-    text-align: center;
-    
+
+.contact_form_button {
+    font-family: PTSans-Bold;
+    width: 100%;
+    height: 50px;
     background-color: #fcdb00;
-    padding: 12px 47px;
-    transition: ease-in-out .5s;
 }
-.contact_form button:hover{
-    color:#fcdb00; 
-    background-color: white;   
+
+.contact_form_button:hover {
+
+    border: 3px solid #fcdb00;
+    background-color: white;
 }
-.social{
+
+.social_icon {
     margin-top: 60px;
 }
-.social ul li{
+
+.social_icon li {
     width: 50px;
     height: 50px;
     border-radius: 10px;
-    margin-right: 10px;
     background-color: #fcdb00;
-    transition:  .5s;
+    transition: ease .5s;
 }
-.social ul li:hover{
-    transform: scale(1.3,1.3);
+
+.social_icon li:hover {
+    transform: scale(1.2, 1.2);
 }
-.social ul li a i{
-    font-size: 30px;
+
+.social_icon li a {
     color: #010101;
-    padding-top: 10px !important;
-    transition: ease-in-out .5s;
 }
-.social ul li a i:hover{
-    color: white;
-     transform: rotatey(360deg);
+
+.social_icon li a i {
+    font-size: 40px;
+    margin-top: 5px;
+    transition: ease .8s;
+}
+
+.social_icon li a i:hover {
+    transform: rotatey(360deg);
 }
 
 /*contact end*/
 /*footer start*/
-.footer{
-    background-color: #010101;
+.footer {
     padding-bottom: 100px;
-    color: #ffffff;
+    color: white;
+    background-color: #010101;
 }
-.f_address{}
-.f_address ul li{
-    list-style: none;
+
+.address {}
+
+.address p {
+    margin: 0;
 }
-.f_address ul li p{
-    margin: 0;   
-}
-.nav-link-custom{
+
+.nav_link_custom {
     color: white;
     padding: 0;
+    transition: ease .5s;
 }
-.nav-link-custom:hover{
+
+.nav_link_custom:hover {
     color: #fcdb00;
 }
+
 /*footer end*/
